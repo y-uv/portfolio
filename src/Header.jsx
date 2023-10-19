@@ -10,7 +10,7 @@ const Header = () => {
           href={linkedInUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-4xl font-bold transition duration-200 ease-in-out hover:text-yuvhover active:text-yuvactive 30 0"
+          className="text-4xl font-bold transition duration-400 ease-in-out hover:text-yuvhover active:text-yuvactive 30 0"
         >
           Yuval Smith
         </a>
