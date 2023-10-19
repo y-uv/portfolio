@@ -1,12 +1,8 @@
 import "./App.css";
-import SideBar from "./SideBar";
+import SoundCloudCard from "./SoundCloudCard";
 
 function App() {
-  return (
-    <div className="flex">
-      <SideBar />
-    </div>
-  );
+  return <SoundCloudCard />;
 }
 
 export default App;
