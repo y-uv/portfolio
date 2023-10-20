@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const TypingComponent = () => {
   const [text] = useTypewriter({
     words: [
-      "Student",
+      "Studenti",
       "Developer",
       "Music Producer",
       "Team Captain",
@@ -23,9 +23,9 @@ const TypingComponent = () => {
   };
 
   return (
-    <h1 className="m-20 text-6xl">
-      I'm a{" "}
-      <span className="font-bold text-white">
+    <h1 className="font-consolas m-20 text-6xl">
+      i'm a{" "}
+      <span className="font-consolas font-medium text-white">
         {text !== "" ? addPeriod(text) : ""}
       </span>
       <Cursor cursorStyle="<" cursorColor="#ffffff" />

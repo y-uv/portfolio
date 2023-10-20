@@ -4,8 +4,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        consolas: ["Consolas", "monospace"],
+      },
       colors: {
-        yuvheader: "#424656",
         yuvbg: "#A6ABBD",
         yuvhover: "#CB707F",
         yuvactive: "#923D4E",
