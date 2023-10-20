@@ -4,15 +4,12 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const TypingComponent = () => {
   const [text] = useTypewriter({
     words: [
-      "Studenti",
+      "Student",
       "Developer",
       "Music Producer",
       "Team Captain",
       "Creative",
       "Problem Solver",
-      "Curious Mind",
-      "Friend",
-      "Proactive Learner",
     ],
     loop: {},
     typeSpeed: 120,
@@ -23,13 +20,15 @@ const TypingComponent = () => {
   };
 
   return (
-    <h1 className="font-consolas m-20 text-6xl">
-      i'm a{" "}
-      <span className="font-consolas font-medium text-white">
-        {text !== "" ? addPeriod(text) : ""}
-      </span>
-      <Cursor cursorStyle="<" cursorColor="#ffffff" />
-    </h1>
+    <div className="flex typing-component-container h-20 lg:h-32 mt-8 md:mt-5">
+      <h1 className=" font-consolas m-0 text-6xl">
+        i'm a{" "}
+        <span className="font-consolas font-medium text-white">
+          {text !== "" ? addPeriod(text) : ""}
+        </span>
+        <Cursor cursorStyle="<" cursorColor="#ffffff" />
+      </h1>
+    </div>
   );
 };
 

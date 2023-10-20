@@ -12,9 +12,11 @@ function App() {
       <Header />
       <TypingComponent />
       <SoundCloudCard />
+      {/*<TypingComponent />
+      <SoundCloudCard />
       <AboutMe />
       <Testimonials />
-      <Projects />
+      <Projects /> */}
     </>
   );
 }
