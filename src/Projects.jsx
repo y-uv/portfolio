@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen flex items-center justify-center bg-yuvbg"
+      className="min-h-screen flex items-center justify-center bg-gray-200"
     >
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md text-center mt-20 mb-20">
         {/* Add some top margin (mt-20) to push the card down */}

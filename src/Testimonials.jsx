@@ -22,7 +22,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-200"
+      className="min-h-screen flex flex-col items-center justify-center bg-yuvbg"
     >
       <h1 className="text-4xl font-bold mb-8 text-black">Testimonials</h1>
       <div className="flex justify-center space-x-8">
