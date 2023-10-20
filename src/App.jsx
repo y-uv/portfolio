@@ -11,8 +11,8 @@ function App() {
       <Header />
       <SoundCloudCard />
       <AboutMe />
-      <Projects />
       <Testimonials />
+      <Projects />
     </>
   );
 }
