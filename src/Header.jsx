@@ -7,11 +7,10 @@ const Header = () => {
   return (
     <header className="bg-black text-white py-4 text-center">
       <div className="container mx-auto flex flex-row justify-center items-center lg:flex-row lg:justify-between lg:items-center">
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
+        <a
+          href={linkedInUrl} // Use 'href' for external links
+          target="_blank"
+          rel="noopener noreferrer"
           className="tracking-widest text-3xl font-bold transition duration-400 ease-in-out hover:text-yuvhover active:text-yuvactive mx-auto lg:mx-20 mb-2 lg:mb-0"
           style={{
             background: "-webkit-linear-gradient(left, #a75cf6, #ffcc29)",
@@ -20,7 +19,7 @@ const Header = () => {
           }}
         >
           Yuval Smith
-        </Link>
+        </a>
         <div className="flex justify-between">
           <Link
             to="aboutme"
