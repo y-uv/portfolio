@@ -1,33 +1,28 @@
 import React from "react";
 
 import "./App.css";
-import SoundCloudCard from "./SoundCloudCard";
-import Header from "./Header";
-import AboutMe from "./AboutMe";
+import Navbar from "./NavBar";
+import Home from "./Home";
 import Projects from "./Projects";
 import Testimonials from "./Testimonials";
-import TypingComponent from "./TypingComponent";
 import Experience from "./Experience";
 
-import { Element } from "react-scroll";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-y-auto overflow-x-hidden scrollbar-hidden">
-        <Element name="header" className="element snap-start">
-          <Header />
-        </Element>
-        <Element name="projects" className="element snap-start">
-          <Projects />
-        </Element>
-        <Element name="testimonials" className="element snap-start">
-          <Testimonials />
-        </Element>
-        <Element name="experience" className="element snap-start">
-          <Experience />
-        </Element>
-      </div>
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/experience" element={<Experience />} />
+        </Routes>
+      </AnimatePresence>
     </>
   );
 }

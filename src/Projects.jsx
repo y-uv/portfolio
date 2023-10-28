@@ -1,16 +1,16 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 import "./App.css";
+import Transition from "./Transition";
 
 const Projects = () => {
   return (
     <>
-      <Element className=" bg-white w-full h-screen flex items-center justify-center">
-        <h1 className="text-black">Projects</h1>
-      </Element>
+      <div className=" bg-black w-full h-screen flex items-center justify-center">
+        <h1 className="top-1/4 left-1/2 text-white">Projects</h1>
+      </div>
     </>
   );
 };
 
-export default Projects;
+export default Transition(Projects);
