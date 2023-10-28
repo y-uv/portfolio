@@ -11,7 +11,7 @@ const Home = () => {
   const soundCloudUrl = "https://soundcloud.com/yuveee";
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
+    <div className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-cyan-600 to-fuchsia-600">
       <div>
         <h1 className="top-1/4 left-1/2">Yuval Smith</h1>
       </div>
