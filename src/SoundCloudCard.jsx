@@ -3,7 +3,7 @@ import React from "react";
 const SoundCloudCard = () => {
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="max-w-lg bg-black text-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+      <div className="max-w-lg bg-white text-white p-2 rounded-lg shadow-lg flex flex-col items-center">
         <iframe
           title="SoundCloud Playlist"
           width="100%"
@@ -30,7 +30,7 @@ const SoundCloudCard = () => {
             href="https://soundcloud.com/yuveee"
             title="yuval"
             target="_blank"
-            style={{ color: "#cccccc", textDecoration: "none" }}
+            style={{ color: "#000000", textDecoration: "none" }}
           >
             yuval
           </a>{" "}
@@ -39,7 +39,7 @@ const SoundCloudCard = () => {
             href="https://soundcloud.com/yuveee/sets/yuvhits"
             title="yuvhits"
             target="_blank"
-            style={{ color: "#cccccc", textDecoration: "none" }}
+            style={{ color: "#000000", textDecoration: "none" }}
           >
             yuvhits
           </a>
