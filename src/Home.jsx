@@ -15,7 +15,7 @@ const Home = () => {
       <div>
         <h1 className="top-1/4 left-1/2">Yuval Smith</h1>
       </div>
-      <div className=" text-white flex space-x-1 absolute top-1/4 mt-10 ">
+      <div className=" text-white flex space-x-3 absolute top-1/4 mt-12 ">
         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn size="3vw" />
         </a>
