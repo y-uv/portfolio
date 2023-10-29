@@ -33,19 +33,25 @@ body {
 .nav-item {
   margin: 2em;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
 }
 
 h1 {
-  @apply text-3xl;
   @apply text-white;
   width: 80%;
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: 500;
-  font-size: 6vw;
+  font-size: 3rem;
   line-height: 1;
+}
+
+@media (min-width: 48em) {
+  /* Apply styles for md and larger screens (md and up) */
+  h1 {
+    font-size: 5rem; /* Change font size to 3rem for md and larger screens */
+  }
 }
 
 ::-webkit-scrollbar {
