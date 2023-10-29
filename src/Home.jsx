@@ -13,14 +13,12 @@ const Home = () => {
 
   return (
     <>
-      <canvas id="gradient-canvas"></canvas>
-
       {/* <div className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-cyan-600 to-fuchsia-600"> */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center">
         <div>
-          <h1 className="top-1/3 left-1/2">Yuval Smith</h1>
+          <h1 className="fade-in top-1/3 left-1/2">Yuval Smith</h1>
         </div>
-        <div className=" text-white flex space-x-3 absolute top-1/3 mt-6 md:mt-12">
+        <div className="fade-in text-white flex space-x-3 absolute top-1/3 mt-6 md:mt-12">
           <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn size="2rem" />
           </a>
@@ -36,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Transition(Home);
+export default Home;

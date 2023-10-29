@@ -17,16 +17,20 @@ function App() {
   useEffect(() => {
     const gradient = new Gradient();
     gradient.initGradient("#gradient-canvas");
-  });
+  }, []);
+
   return (
     <>
-      <Navbar />
-      <Routes location={location} key={location.pathname}>
-        <Route index element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/experience" element={<Experience />} />
-      </Routes>
+      <AnimatePresence>
+        <Navbar />
+        <canvas className="fade-in" id="gradient-canvas"></canvas>
+        <Routes location={location} key={location.pathname}>
+          <Route index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/experience" element={<Experience />} />
+        </Routes>
+      </AnimatePresence>
     </>
   );
 }

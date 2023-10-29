@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuval Smith</title>
   </head>
-  <body>
+  <body id="body" style="display: none">
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("body").style.display = "";
+        }, 200);
+      };
+    </script>
   </body>
 </html>
